@@ -19,7 +19,7 @@ function App() {
 
   const RandomNumber = async () => {
     try {
-      const response = await fetch("http://localhost:1126/api/random");
+      const response = await fetch("https://challenge-backend-p2.vercel.app/api/random");
       if (response.ok) {
         const data = await response.json();
         setNumber(data.data.numberRandom);
